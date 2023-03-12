@@ -17,6 +17,7 @@
         - htop
         - tmux         
         - micro
+        - xclip
         - net-tools
         - dnsutils
         - nmap
