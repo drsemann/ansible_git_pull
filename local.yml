@@ -1,23 +1,23 @@
 ---
 - hosts: localhost
-   connection: local
-   become: true
+  connection: local
+  become: true
  
-   tasks:
-    - name: Atualizando o sistema
-      ansible.builtin.apt: 
-        name: '*'
-        state: latest        
-        update_cache: yes
-        only_upgrade: yes
+  tasks:
+   - name: Atualizando o sistema
+     ansible.builtin.apt: 
+       name: '*'
+       state: latest        
+       update_cache: yes
+       only_upgrade: yes
 
-    - name: Instalando pacotes
-      package:
-        name:
-         - htop
-         - tmux         
-         - micro
-         - net-tools
-         - dnsutils
-         - nmap
+   - name: Instalando pacotes
+     package:
+       name:
+        - htop
+        - tmux         
+        - micro
+        - net-tools
+        - dnsutils
+        - nmap
 ...
