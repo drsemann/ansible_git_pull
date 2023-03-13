@@ -10,8 +10,6 @@
        state: latest        
        update_cache: yes
        only_upgrade: yes
-     args:
-      warn: false
 
    - name: Instalando pacotes
      package:
@@ -24,6 +22,4 @@
         - dnsutils
         - nmap
         - grc
-     args:
-      warn: false   
 ...
