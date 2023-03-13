@@ -22,4 +22,7 @@
         - dnsutils
         - nmap
         - grc
-...
+
+   - name: Setando Nome
+     ansible.builtin.hostname:
+      name: debian-vm
