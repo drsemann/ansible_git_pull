@@ -2,6 +2,8 @@
 - hosts: localhost
   connection: local
   become: true
+  args:
+    warn: false
  
   tasks:
    - name: Atualizando o sistema
